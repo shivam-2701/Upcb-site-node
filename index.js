@@ -1,7 +1,7 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
-const app= express();
+const app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
 
@@ -12,7 +12,7 @@ app.set("view engine","ejs");
 app.set("views","./views");
 app.use(express.static("./assets"));
 //home
-app.get("/",(req,res)=>{
+app.get("/home",(req,res)=>{
     return res.render("home")
 })
 
@@ -133,5 +133,5 @@ app.get("/importantNotification",(req,res)=>{
 
 //Listen Port
 app.listen(7080,()=>{
-    console.log("Server is running at http://localhost:7080");
+    console.log("Server is running at Port no.  http://localhost:7080");
 });
