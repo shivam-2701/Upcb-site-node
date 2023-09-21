@@ -12,7 +12,7 @@ app.set("view engine","ejs");
 app.set("views","./views");
 app.use(express.static("./assets"));
 //home
-app.get("/home",(req,res)=>{
+app.get("/",(req,res)=>{
     return res.render("home")
 })
 

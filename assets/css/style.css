@@ -60,79 +60,85 @@ a {
 
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
-} 
+}
 
 section {
     padding: 3.125rem 0;
 }
 
 /**top nav start**/
-.breadmenu{
+.breadmenu {
     color: #ffffff;
     font-family: var(--primary-font);
     font-size: 0.9rem;
     font-weight: 600;
 }
-.breadmenu a:hover{color:#ffffff}
-/*******Navbar Start*********/
-.top-nav{
-  background-color: #ff4d29;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: var(--secondary-font);
-  text-transform: uppercase;
-  }
 
-.top-nav p{
-  margin-bottom: 0;
-  display: inline-block;
-  margin-right: 16px;
-  color: #ffffff;
-  font-size: .875rem;
- }
-
-.top-nav i,
-.top-nav span{
-  vertical-align: middle;
+.breadmenu a:hover {
+    color: #ffffff
 }
 
-.social-links a{
-  width: 34px;
-  height: 34px;
-  background: rgba(255, 255, 255, 0.4);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+/*******Navbar Start*********/
+.top-nav {
+    background-color: #ff4d29;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+}
+
+.top-nav p {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 16px;
+    color: #ffffff;
+    font-size: .875rem;
+}
+
+.top-nav i,
+.top-nav span {
+    vertical-align: middle;
+}
+
+.social-links a {
+    width: 34px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.4);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
     font-size: 20px;
     border-radius: 100%;
 }
 
-.social-links a:hover{
-  background-color: #ffffff;
-  color: #ff4d29;
+.social-links a:hover {
+    background-color: #ffffff;
+    color: #ff4d29;
 }
 
-.navbar{
-  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+.navbar {
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
 }
 
 .navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link .active{
-  color: #ff4d2e;
+.navbar .navbar-nav .nav-link .active {
+    color: #ff4d2e;
 }
-.navbar-brand{
-/*  font-weight: 400;*/
-/*  font-size: 26px;*/
-  color: #92032;
 
-/*    position: relative;*/
+.navbar-brand {
+    /* font-weight: 400;
+ font-size: 26px; */
+    color: #920392;
+
+    /*    position: relative;*/
     background: url(../images/logo1.png);
-    width: 300px; /*160px*/
+    width: 300px;
+    /*160px*/
     height: 140px;
     background-repeat: no-repeat;
-/*    left: 15px;*/
-/*    background-size: contain;*/
+    /*    left: 15px;*/
+    /*    background-size: contain;*/
 }
 
 /**top nav end**/
@@ -150,20 +156,22 @@ section {
     display: inline-block;
     transition: all 0.3s ease-out 0s;
 }
-.main-btn1  .btn{
+
+.main-btn1 .btn {
     background-color: var(--secondary-color);
     color: #ffffff;
     font-weight: 500;
     border: 3px inset #ffffff;
 }
 
-.main-btn1  .btn:hover{
+.main-btn1 .btn:hover {
     background-color: #ffffff;
     color: var(--secondary-color);
     font-weight: 500;
-      border: 3px inset var(--secondary-color);
+    border: 3px inset var(--secondary-color);
 }
-.{
+
+. {
     font-size: 1rem;
     font-weight: 600;
     color: var(--primary-color);
@@ -183,7 +191,65 @@ section {
     color: var(--text-white);
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+body {
+    position: relative;
+}
+
+/* join us menu bar */
+
+#slideout {
+    position: fixed;
+    top: 355px;
+    left: 0;
+    z-index: 5;
+    
+
+}
+
+#slideout img {
+    border-radius: 7px;
+    height: 80px;
+}
+
+#slideout_inner {
+    position: fixed;
+    top: 355px;
+    left: -250px;
+  
+}
+
+#slideout:hover {
+    left: 76px;
+}
+
+#slideout:hover #slideout_inner {
+    left: -10px;
+}
+
+.slide-out-div {
+    padding: 20px;
+    width: 87px;
+    height: 265px;
+    color: rgba(0, 0, 0, 0.9);
+    background: rgba(46, 45, 47, 0.77);
+    border: 1px solid #29216d;
+}
+
+.slide-out-div ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.slide-out-div ul li {
+
+    padding: 10px;
+}
 
 h1 {
     font-size: 3.75rem;
@@ -208,7 +274,7 @@ h3 span {
     color: var(--secondary-text);
 }
 
-h4{
+h4 {
     font-family: var(--primary-font);
 }
 
@@ -237,6 +303,7 @@ p {
     line-height: 1.625rem;
     font-family: DM Sans;
 }
+
 /*
 .section-title:after {
     content: "";
@@ -283,10 +350,10 @@ p {
     font-family: Anton;
 }
 
-.header_wrapper .nav-item .nav-link:hover{
+.header_wrapper .nav-item .nav-link:hover {
     border-top: 2px solid var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
-   
+
 }
 
 .header_wrapper .nav-item .nav-link.active,
@@ -295,26 +362,27 @@ p {
     width: 100%;
 }
 
-.dropdown-menu .nav-item .submenu{
+/* .dropdown-menu .nav-item .submenu{
    
 
+} */
+
+.dropdown:hover>.dropdown-menu,
+.dropend:hover>.dropdown-menu {
+    display: block;
+    margin-top: .15rem;
+    margin-left: .125rem;
+    font-family: Anton;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--secondary-text);
+
 }
 
-.dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
-display: block;
-  margin-top: .15rem;
-  margin-left: .125rem;
-  font-family:Anton;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--secondary-text);
+.header_wrapper .link-widget li a {
 
-}
-
-.header_wrapper .link-widget li a{
-    
     font-size: .875rem;
-    padding-left:0.98rem;
+    padding-left: 0.98rem;
     position: relative;
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
@@ -335,15 +403,17 @@ display: block;
     margin-left: .05rem;
     color: var(--secondary-text);
 }
-.dropdown-item{
-     padding: 0;
+
+.dropdown-item {
+    padding: 0;
     margin: 0;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
     background-color: rgba(255, 95, 0, 0.1);
     font-weight: bold;
-   }
-   
+}
+
 
 .navbar.header-scrolled {
     position: fixed;
@@ -370,8 +440,11 @@ display: block;
     }
 }
 
-.header_wrapper .navbar img{
-    width:30%; transform: translateY(-35px); height: auto;padding-top: 5px;
+.header_wrapper .navbar img {
+    width: 30%;
+    transform: translateY(-35px);
+    height: auto;
+    padding-top: 5px;
 }
 
 
@@ -426,19 +499,20 @@ display: block;
     max-width: 37.5rem;
     margin: 0 auto;
     color: var(--text-white);
-    
+
 }
 
-.small-menu{
+.small-menu {
     background: var(--bg-white);
     box-shadow: 0 .625rem .9375rem 0 rgb(0 0 0 / 10%);
     margin-top: -4rem;
     padding: 1.125rem 1.875rem;
     position: relative;
     z-index: 2;
-} 
-.small-menu img{
-  border: .0625rem solid var(--secondary-color);
+}
+
+.small-menu img {
+    border: .0625rem solid var(--secondary-color);
 }
 
 
@@ -454,29 +528,37 @@ display: block;
 
 /* 4About */
 .about_wrapper {
-    padding-top: 8.375rem; /* height of section */
+    padding-top: 8.375rem;
+    /* height of section */
 }
 
 
-.about_wrapper .ourapp img{
-border-radius: 8px;
-width: 150px;
-height: auto;
-padding-bottom: 10px;
+.about_wrapper .ourapp img {
+    border-radius: 8px;
+    width: 150px;
+    height: auto;
+    padding-bottom: 10px;
 }
 
-.Interest_wrapper{
-    background-color:#F9F9F9;
+.Interest_wrapper {
+    background-color: #F9F9F9;
 }
 
-.Interest_wrapper .ourapp .Mpassbook .MpassbookLink, .MobileApp .MobileAppLink{color:#606060; font-weight:bold; font-family: DM Sans;}
-.Interest_wrapper .ourapp .Mpassbook img, .MobileApp img{
-height: 200px;
-width: 300px;
+.Interest_wrapper .ourapp .Mpassbook .MpassbookLink,
+.MobileApp .MobileAppLink {
+    color: #606060;
+    font-weight: bold;
+    font-family: DM Sans;
+}
+
+.Interest_wrapper .ourapp .Mpassbook img,
+.MobileApp img {
+    height: 200px;
+    width: 300px;
 }
 
 
-}
+
 /**
  * 
  * .MpassbookLink:hover, .MobileAppLink:hover{color: #606060;}
@@ -492,11 +574,12 @@ width: 300px;
 }
 ***/
 /* 5.1 Interest section */
-.Interest_wrapper{
-    background-color:#F9F9F9;
+.Interest_wrapper {
+    background-color: #F9F9F9;
 }
-.Interest_wrapper .p1{
-  font-size: 1rem;
+
+.Interest_wrapper .p1 {
+    font-size: 1rem;
     font-weight: 700;
     color: var(--primary-text);
     margin: 0;
@@ -504,127 +587,146 @@ width: 300px;
     font-family: var(--primary-font);
 }
 
-.Interest_wrapper .p2{
-  font-size: 0.865rem;
-  color: var(--primary-text);
-  line-height: 0.9rem;
-   font-family: Dm Sans;
+.Interest_wrapper .p2 {
+    font-size: 0.865rem;
+    color: var(--primary-text);
+    line-height: 0.9rem;
+    font-family: Dm Sans;
 }
 
 
-.Interest_wrapper .div2, .div3{
-  padding-top: 20px;
+.Interest_wrapper .div2,
+.div3 {
+    padding-top: 20px;
 }
-.Interest_wrapper a{
+
+.Interest_wrapper a {
     color: #000000;
 }
-.Interest_wrapper .p1, .Interest_wrapper .p2 a:hover{
-  color: var(--secondary-text);
-  cursor: pointer;
+
+.Interest_wrapper .p1,
+.Interest_wrapper .p2 a:hover {
+    color: var(--secondary-text);
+    cursor: pointer;
 }
 
 /** calculator Start**/
 label {
-  display: block;
-  font-size: 22px;
-  margin-bottom: 10px;
-  font-weight: 500;
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
-input {
-  margin-bottom: 20px;
-  border: none;
-  font-size: 20px;
-  border-bottom: 2px solid #585858;
-  color: #585858;
-  padding: 2px 15px;
-}
-input:focus {
-  outline: none;
-  border-bottom: 2.4px solid #01e26e;
-}
-.input-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-.input-wrapper input {
-  width: 100%;
-}
-.time-wrapper input {
-  width: 60%;
-}
-select {
-  width: 35%;
-  border: 1px solid #585858;
-  font-size: 20px;
-  margin-left: 3%;
-  padding: 8px 0;
-  border-radius: 5px;
-}
-button {
-  display: block;
-  background-color: #01e26e;
-  border: none;
-  color: #ffffff;
-  margin: 20px auto 0 auto;
-  padding: 15px 40px;
-  font-size: 20px;
-  border-radius: 5px;
-}
-#result {
-  background-color: #c6ffe2;
-  margin-top: 30px;
-  color: #585858;
-  text-align: center;
-  font-size: 18px;
-  padding: 20px;
-  border-radius: 5px;
-}
-#result div {
-  margin-bottom: 10px;
-}
-#result span {
-  color: #000000;
-  font-weight: 500;
-}
-         .slidecontainer {
-         width: 100%;
-         }
-         .slider {
-         -webkit-appearance: none;
-         width: 100%;
-         height: 15px;
-         border-radius: 5px;
-         background: #d3d3d3;
-         outline: none;
-         opacity: 0.7;
-         -webkit-transition: .2s;
-         transition: opacity .2s;
-         }
-         .slider:hover {
-         opacity: 1;
-         }
-         .slider::-webkit-slider-thumb {
-         -webkit-appearance: none;
-         appearance: none;
-         width: 25px;
-         height: 25px;
-         border-radius: 50%;
-         background: #04AA6D;
-         cursor: pointer;
-         }
-         .slider::-moz-range-thumb {
-         width: 25px;
-         height: 25px;
-         border-radius: 50%;
-         background: #04AA6D;
-         cursor: pointer;
-         }
 
-      .headshot {
+input {
+    margin-bottom: 20px;
+    border: none;
+    font-size: 20px;
+    border-bottom: 2px solid #585858;
+    color: #585858;
+    padding: 2px 15px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2.4px solid #01e26e;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.input-wrapper input {
+    width: 100%;
+}
+
+.time-wrapper input {
+    width: 60%;
+}
+
+select {
+    width: 35%;
+    border: 1px solid #585858;
+    font-size: 20px;
+    margin-left: 3%;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    background-color: #01e26e;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#result {
+    background-color: #c6ffe2;
+    margin-top: 30px;
+    color: #585858;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#result div {
+    margin-bottom: 10px;
+}
+
+#result span {
+    color: #000000;
+    font-weight: 500;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.headshot {
     flex-shrink: 0;
     margin: 20px;
-  
+
     border: calc(8px + 0.2vw) solid transparent;
     background-origin: border-box;
     background-clip: content-box, border-box;
@@ -645,8 +747,8 @@ button {
 
 
 /*6  Our Services section */
-.Ourservices_wrapper{
-  background-color:rgb(255, 206, 183);
+.Ourservices_wrapper {
+    background-color: rgb(255, 206, 183);
 }
 
 
@@ -656,7 +758,7 @@ button {
 }
 
 .Ourservices-item img {
-    width:  300px;
+    width: 300px;
     height: 200px;
     background-size: contain;
     border: 3px solid #ffffff;
@@ -668,14 +770,16 @@ button {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05);
 }
- .Ourservices-link{
- text-align: center;
- padding: 40px 10px 0;
- font-family: var(--secondary-font);
- font-size: 1rem;
- font-weight: 600;
- color: var(--text-white);
+
+.Ourservices-link {
+    text-align: center;
+    padding: 40px 10px 0;
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-white);
 }
+
 /*style="max-width: 400px; max-height: 245px; border: 2px solid darkred;"*/
 .Ourservices-item::before {
     content: "";
@@ -704,10 +808,11 @@ button {
     z-index: 1;
 }
 
-.Ourservices-content p{
-  font-size: 0.875rem;
-  line-height: 1;
+.Ourservices-content p {
+    font-size: 0.875rem;
+    line-height: 1;
 }
+
 .Ourservices-item .Ourservices-content {
     border: .125rem solid #fff;
     padding: 0.685rem 1.875rem;
@@ -861,6 +966,63 @@ button {
 }
 
 /*8 Gallery Section */
+#gallerybutton button {
+    background-color: red;
+    gap: 2px;
+}
+
+#gallerybutton button:hover {
+    color: black;
+}
+
+#gallerybutton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 200px;
+
+}
+@media (max-width:769px) {
+
+    #gallerybutton{
+        
+    }
+    #gallerybutton button {
+       
+       gap: 20px;
+    }
+    #gallerybutton {
+        padding: 0px 50px;
+    }
+    
+    
+}
+@media (max-width:450px) {
+
+    #gallerybutton{
+        
+    }
+    #gallerybutton button {
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #gallerybutton {
+        padding: 0px 50px;
+    }
+
+    #gallerybutton button:hover {
+        color: white;
+    }
+    
+}
+
 .gallery-item {
     box-shadow: 0 0 .1875rem rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -936,10 +1098,25 @@ button {
 }
 
 /*9 pricing section */
-h6{font-weight:600;padding:0;margin: 0;}
-.hq p{padding:0; margin: 0;}
-.atmsbranches .container, .atmcards{background-color: rgba(255, 95, 0, 0.1);}
-.atmsbranches .address{padding: 20px 15px;}
+h6 {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.hq p {
+    padding: 0;
+    margin: 0;
+}
+
+.atmsbranches .container,
+.atmcards {
+    background-color: rgba(255, 95, 0, 0.1);
+}
+
+.atmsbranches .address {
+    padding: 20px 15px;
+}
 
 .atmsbranches .card {
     box-shadow: 0 .125rem .25rem rgb(34 30 31 / 40%);
@@ -977,7 +1154,7 @@ h6{font-weight:600;padding:0;margin: 0;}
 
 /* 11 footer */
 .footer_wrapper {
-   /*background-image: url('upcb.jpg');;
+    /*background-image: url('upcb.jpg');;
    background-repeat: no-repeat;
    background-size: 100% 100%;
    background-color: rgba(255, 255, 255, 0.3);
@@ -987,11 +1164,11 @@ h6{font-weight:600;padding:0;margin: 0;}
    width: 100%;
     height: 400px;
     */
-  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/upcbnew.jpg) ;
-  background-repeat: no-repeat;
-   background-size: 100% 100%;
-   
-   background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/upcbnew.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    background-position: center;
 }
 
 .footer_wrapper h5 {
@@ -1004,7 +1181,7 @@ h6{font-weight:600;padding:0;margin: 0;}
     list-style: none;
 }
 
-.footer_wrapper .contact-info li a{
+.footer_wrapper .contact-info li a {
     color: var(--secondary-color)
 }
 
@@ -1012,7 +1189,7 @@ h6{font-weight:600;padding:0;margin: 0;}
 .footer_wrapper p {
     color: var(--text-gray);
     font-size: .875rem;
-    padding-left:1.5rem;
+    padding-left: 1.5rem;
     position: relative;
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
@@ -1038,7 +1215,7 @@ h6{font-weight:600;padding:0;margin: 0;}
     width: 2.1875rem;
     height: 2.1875rem;
     margin: .5rem;
-    line-height:2rem;
+    line-height: 2rem;
     font-size: .875rem;
     display: inline-block;
     border: .125rem solid var(--text-gray);
@@ -1077,14 +1254,13 @@ h6{font-weight:600;padding:0;margin: 0;}
 
 
 
-<!--Responsive Design-->
-
-@media (max-width: 1199px) {
+< !--Responsive Design-->@media (max-width: 1190px) {
 
     /* header */
     .navbar-expand-lg .navbar-nav {
         align-items: center;
     }
+
 
     .navbar-expand-lg .navbar-nav .nav-link {
         padding: 0;
@@ -1141,7 +1317,8 @@ h6{font-weight:600;padding:0;margin: 0;}
     /* custom css */
     section {
         padding: 1.875rem 0;
-}
+
+    }
 
 
 
@@ -1180,7 +1357,7 @@ h6{font-weight:600;padding:0;margin: 0;}
 
     /* services */
     .service-menu-area {
-        padding:1.5rem 0.5rem;
+        padding: 1.5rem 0.5rem;
     }
 
     .service-menu-area ul li {
@@ -1194,51 +1371,56 @@ h6{font-weight:600;padding:0;margin: 0;}
 
     .footer_wrapper {
 
-background-size: 100% 100%;
-   
-   background-position: center;
+        background-size: 100% 100%;
+
+        background-position: center;
     }
 
-    .services_wrapper .fdimage img{
+    /* .services_wrapper .fdimage img{
+
+    } */
+    .box {
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+
+    .box:hover {
+        background-color: rgb(255, 206, 183);
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -60px !important;
 
     }
-    .box{
-    text-align: center;
-    border:1px solid rgba(0,0,0,0.2);
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
-    border-radius: 2px;
-    transition: 0.3s;
-}
 
-.box:hover{
- background-color: rgb(255, 206, 183);
-}
-.carousel-indicators{
-    position: absolute;right: 0;
-    bottom: -60px!important;
+    .carousel-indicators li {
+        background-color: #16c9f6 !important;
+    }
 
-}
-.carousel-indicators li{
-    background-color: #16c9f6!important;
-}
-.box a{
-    position: relative;
-}
+    .box a {
+        position: relative;
+    }
 
-.box a img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
+    .box a img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 20px;
 
-}
+    }
 
 }
 
 @media (max-width: 767px) {
     .about_wrapper .ourapp {
-        padding: 0; margin: 0;
-}
+        padding: 0;
+        margin: 0;
+    }
 
     /* custom css */
     h1 {
@@ -1269,49 +1451,56 @@ background-size: 100% 100%;
     .footer_wrapper>div {
         padding: 0 1.875rem;
     }
+
     .footer_wrapper {
 
-background-size: 100% 100%;
-   
-   background-position: center;
+        background-size: 100% 100%;
+
+        background-position: center;
     }
 
-    .pricing, .happyclients , .contactus{
+    .pricing,
+    .happyclients,
+    .contactus {
         height: auto;
-         margin-top: 50px;
-         margin-bottom: 600px;
+        margin-top: 50px;
+        margin-bottom: 600px;
     }
 
-    .box{
-    text-align: center;
-    border:1px solid rgba(0,0,0,0.2);
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
-    border-radius: 2px;
-    transition: 0.3s;
-    background-color: red;
-}
+    .box {
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        transition: 0.3s;
+        background-color: red;
+    }
 
-.box:hover{
- background-color: rgb(255, 206, 183);
-}
-.carousel-indicators{
-    position: absolute;right: 0;
-    bottom: -60px!important;
+    .box:hover {
+        background-color: rgb(255, 206, 183);
+    }
 
-}
-.carousel-indicators li{
-    background-color: #16c9f6!important;
-}
-.box a{
-    position: relative;
-}
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -60px !important;
 
-.box a img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
+    }
+
+    .carousel-indicators li {
+        background-color: #16c9f6 !important;
+    }
+
+    .box a {
+        position: relative;
+    }
+
+    .box a img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
 
 
 }
@@ -1324,96 +1513,119 @@ background-size: 100% 100%;
   height: 100vh;
   position: fixed;
   /*margin-left: -300px;*/
-  /*background-color: #FF5D00;
+/*background-color: #FF5D00;
   transition: 0.4s;
 }
 */
 
-.centeri{
- background-color: var(--secondary-color);
- }
+.centeri {
+    background-color: var(--secondary-color);
+}
 
- .sidebar .nav .nav-item .nav-link{
-  color: var(--text-white);
-  font-family: var(--primary-font);
-  font-size: 0.9rem;
-  font-weight: 600;
-  border-bottom: 1px solid #ffffff;
- }
+.sidebar .nav .nav-item .nav-link {
+    color: var(--text-white);
+    font-family: var(--primary-font);
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-bottom: 1px solid #ffffff;
+}
 
 
 /*inside codeing for digitalbanking pages start*/
 
- .sidebar .InternetBanking p, .InternetBanking ul li, .BenefitsofIB ul li{
+.sidebar .InternetBanking p,
+.InternetBanking ul li,
+.BenefitsofIB ul li {
     font-family: Helvatica;
     color: #000000;
     font-size: 0.9rem;
     text-align: justify;
- }
-.sidebar .InternetBanking h6{
- font-weight:600;padding-top: 20px;
 }
-.sidebar .MobileBanking ul li, .MobileBankingPoints ul li{
-     font-family: Helvatica;
+
+.sidebar .InternetBanking h6 {
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.sidebar .MobileBanking ul li,
+.MobileBankingPoints ul li {
+    font-family: Helvatica;
     color: #000000;
     font-size: 0.9rem;
     text-align: justify;
 
 }
 
-.sidebar .NEFT p, .RTGS p, .IMPS ul li, .IMPS p, .UPI p, .UPI ul li {
-  font-family: Helvatica;
+.sidebar .NEFT p,
+.RTGS p,
+.IMPS ul li,
+.IMPS p,
+.UPI p,
+.UPI ul li {
+    font-family: Helvatica;
     color: #000000;
     font-size: 0.9rem;
     text-align: justify;
 }
 
-.NEFT table, .RTGS table, .IMPS table, .UPI table{
-border: 1px solid var(--secondary-text);
+.NEFT table,
+.RTGS table,
+.IMPS table,
+.UPI table {
+    border: 1px solid var(--secondary-text);
 }
 
-.NEFT table tbody tr td, .RTGS table tbody tr td, .IMPS table tbody tr td, .UPI table tbody tr td, 
-.NABARDSchemes table tbody tr td{
- font-family: Helvatica;
+.NEFT table tbody tr td,
+.RTGS table tbody tr td,
+.IMPS table tbody tr td,
+.UPI table tbody tr td,
+.NABARDSchemes table tbody tr td {
+    font-family: Helvatica;
     color: #000000;
     font-size: 0.9rem;
     text-align: justify;
 }
 
-.InternetBankingBtn .btn{
+.InternetBankingBtn .btn {
     background-color: var(--secondary-color);
     color: #ffffff;
     font-weight: 500;
     border: 3px inset #ffffff;
 }
 
-.InternetBankingBtn .btn:hover{
+.InternetBankingBtn .btn:hover {
     background-color: #ffffff;
     color: var(--secondary-color);
     font-weight: 500;
-      border: 3px inset var(--secondary-color);
+    border: 3px inset var(--secondary-color);
 }
+
 /*inside codeing for digitalbanking pages end*/
 
 
 
-.nav-link:active, .nav-link:focus, .nav-link:hover{
-  background-color: #ffffff26;
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff26;
 
 }
-.mainc h4{
- font-weight: 700;
- padding-top: 10px; 
- text-transform: uppercase; 
- padding-top: 10px;
+
+.mainc h4 {
+    font-weight: 700;
+    padding-top: 10px;
+    text-transform: uppercase;
+    padding-top: 10px;
 }
 
-.tableContentManner tbody tr td, .tableContentManner ul li{
+.tableContentManner tbody tr td,
+.tableContentManner ul li {
     font-size: 1rem;
     color: var(--text-black);
     line-height: 1.625rem;
     font-family: DM Sans;
 }
+
 /**side bar end**/
 
 /**Atms & Branches start**/
@@ -1422,7 +1634,7 @@ border: 1px solid var(--secondary-text);
 
 /**Atms & Branches end**/
 
-.bgdefine{
+.bgdefine {
     background-color: rgba(255, 95, 0, 0.1);
     padding: 7px 20px;
 }
@@ -1431,116 +1643,139 @@ border: 1px solid var(--secondary-text);
 
 /**** otherlinks page strat********/
 
-.otherlinks table tbody .DownloadPageItemDes:hover, .downloadpage table tbody tr:hover{
-color: var(--secondary-color);
-font-weight: 600;
-font-family: var(--primary-font);
+.otherlinks table tbody .DownloadPageItemDes:hover,
+.downloadpage table tbody tr:hover {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-family: var(--primary-font);
 }
 
-.my-button{
-    background-color:var(--secondary-text);
+.my-button {
+    background-color: var(--secondary-text);
     color: #ffffff;
     padding: 4px 15px;
     border-radius: 3px;
 }
 
-.my-button:hover{
+.my-button:hover {
     color: var(--secondary-text);
     background-color: #ffffff;
     border: 2px solid var(--secondary-color);
 
 }
-a { color: #2293E2; } /* CSS link color (red) */
- /* CSS link hover (green) */
+
+a {
+    color: #2293E2;
+}
+
+/* CSS link color (red) */
+/* CSS link hover (green) */
 
 /********otherlinks page end**********/
 
 /********Tender page start******/
-.tender table .TenderItemDes{
+.tender table .TenderItemDes {
     color: var(--text-black);
 }
-.tender table .TenderItemDes:hover, .OurVision table .OurVisionDes:hover{
+
+.tender table .TenderItemDes:hover,
+.OurVision table .OurVisionDes:hover {
     font-weight: bold;
 }
+
 /*********Tender page end
 
 /**** recruitment page strat********/
-.recruitment ul li, .tender ul li{
-    list-style-type: none; 
+.recruitment ul li,
+.tender ul li {
+    list-style-type: none;
     font-family: var(--primary-font);
     font-size: 1rem;
-   
-   }
-.recruitment ul li a, .tender ul li a{
+
+}
+
+.recruitment ul li a,
+.tender ul li a {
     margin-left: 5px;
     list-style-type: none;
-      color: #212529; 
+    color: #212529;
 }
-.recruitment table tr td a{
+
+.recruitment table tr td a {
     color: #000000;
 }
-.recruitment table tr td:hover, .tender ul li a:hover{
-    color: var(--secondary-color);font-weight: 600;
+
+.recruitment table tr td:hover,
+.tender ul li a:hover {
+    color: var(--secondary-color);
+    font-weight: 600;
 }
-.tender ul li a{
-     margin-left: 5px;
+
+.tender ul li a {
+    margin-left: 5px;
 }
 
 
 /**** recruitment page end********/
 /***important notification start****/
-.importantnotification ul li{
-    list-style-type: none; 
+.importantnotification ul li {
+    list-style-type: none;
     font-family: var(--primary-font);
     font-size: 1rem;
-   }
+}
 
-.importantnotification ul li a{
+.importantnotification ul li a {
     margin-left: 5px;
 }
-.importantnotification ul li a:hover{
-    color: var(--secondary-color);font-weight: 600;
+
+.importantnotification ul li a:hover {
+    color: var(--secondary-color);
+    font-weight: 600;
 }
+
 /***important notification end****/
 
 /*****Fixed Deposit start****/
 
 
 /***************/
-.notification a{
- color: #ffffff;
-  text-decoration: none;
-  padding: 0px 6px;
-  position: relative;
-  display: inline-block;
-  border-radius: 50px;
-  border: 2px solid #ffffff;
-  align-items: center;
- 
+.notification a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0px 6px;
+    position: relative;
+    display: inline-block;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    align-items: center;
+
 }
+
 .notification .badge {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  padding: 5px 10px;
-  border-radius: 50%;
-  background-color: #666666;
-  color: white;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #666666;
+    color: white;
 }
 
 /* ****************three extra header div css starts*************** */
-.exta-div{
-   
-   
-    padding: 30px 30px!important;
+.exta-div {
+
+
+    padding: 30px 30px !important;
     border-radius: 3px;
     transition: 0.3s;
 }
-.exta-div:hover{
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+
+.exta-div:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
     transform: translateY(-20px);
     border: 2px inset #fd7e14;
 }
+
 /* ****************three extra header div css end *************** */
 
 /******
@@ -1560,63 +1795,70 @@ border: 3px solid orange;
 
 /* ****************Our happy clients div css start*************** */
 
-.ourproduct{
+.ourproduct {
     width: 100%;
 
-    }
+}
 
 
-.box{
+.box {
     text-align: center;
-    border:1px solid rgba(0,0,0,0.2);
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 2px;
     transition: 0.3s;
 }
 
 
 
-.ourproduct .container .box:hover{
- -webkit-background-color: rgb(255, 206, 183);
- background-color: rgb(255, 206, 183);
+.ourproduct .container .box:hover {
+    -webkit-background-color: rgb(255, 206, 183);
+    background-color: rgb(255, 206, 183);
 }
-.carousel-indicators{
-    position: absolute;right: 0;
-    bottom: -60px!important;
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px !important;
 
 }
-.carousel-indicators li{
-    background-color: #16c9f6!important;
+
+.carousel-indicators li {
+    background-color: #16c9f6 !important;
 }
-.box a{
+
+.box a {
     position: relative;
 }
 
-.box a img{
+.box a img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin-top: 20px;
 }
 
-    
-.box h1{
+
+.box h1 {
     font-size: 13px;
     font-weight: 700;
     color: #000;
     margin-bottom: 10px;
 
 }
-.box h2{
+
+.box h2 {
     font-size: 13px;
     font-weight: 400;
     color: #6666;
     margin-bottom: 20px;
 }
+
 .box a img:hover {
     animation-name: bounce;
     animation-timing-function: ease;
 }
+
 /* ****************Our happy clients div css ends*************** */
 
 /*10 blog */
@@ -1630,3 +1872,4 @@ border: 3px solid orange;
     padding: 3.125rem 0;
 }
 
+}
