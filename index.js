@@ -2,8 +2,11 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const app = express();
+
+
 const cookieParser = require("cookie-parser");
 const i18n = require("./config/i18n");
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -137,6 +140,8 @@ app.get("/importantNotification", (req, res) => {
 });
 
 //Listen Port
+
 app.listen(7080, () => {
   console.log("Server is running at http://localhost:7080");
 });
+

@@ -1,57 +1,75 @@
 <!-- Gallery section -->
-<section id="gallery" class="gallery_wrapper">
-    <div class="container">
-        
-        <!-- Gallery -->
-<div class="row">
-<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-<img
-  src="images/gallery/img6.jpg"
-  class="w-100 shadow-1-strong rounded mb-4 animate__animated  animate__fadeInLeft"
-  alt=""
-  style="animation-duration:5s"
-/>
+<section id="gallery">
+  <div id="gallerybutton">
+     <button id="button1" style="margin:auto 0px;">ALL</button>
+    <button id="button2" style="margin:auto 0px;">IMAGES</button>
+    <button id="button3" style="margin:auto 0px;">VIDEOS</button>
+  </div>
+  <div id="container2" class="container">
+    <section id="photo" class="gallery_wrapper"> <!-- Gallery -->
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img src="images/gallery/img6.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 animate__animated  animate__fadeInLeft" alt=""
+            style="animation-duration:5s" />
 
-<img
-      src="images/gallery/img2.jpg"
-  class="w-100 shadow-1-strong rounded mb-4 animate__animated  animate__fadeInLeft"
-  alt=""
-   style="animation-duration:5s"
-/>
-</div>
+          <img src="images/gallery/img2.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 animate__animated  animate__fadeInLeft" alt=""
+            style="animation-duration:5s" />
+        </div>
 
-<div class="col-lg-4 mb-4 mb-lg-0">
-<img
-      src="images/gallery/img3.jpg"
-  class="w-100 shadow-1-strong rounded mb-4 animate__animated  animate__fadeInUp" 
-  alt="Mountains in the Clouds"
-  
-/>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="images/gallery/img3.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 animate__animated  animate__fadeInUp"
+            alt="Mountains in the Clouds" />
 
-<img
-     src="images/gallery/img1.jpg"
-  class="w-100 shadow-1-strong rounded mb-4 animate__animated  animate__fadeInUp"
-  alt="Boat on Calm Water"
-/>
-</div>
+          <img src="images/gallery/img1.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 animate__animated  animate__fadeInUp" alt="Boat on Calm Water" />
+        </div>
 
-<div class="col-lg-4 mb-4 mb-lg-0">
-<img
-     src="images/gallery/img5.jpg"
-  class="w-100 shadow-1-strong rounded mb-4  animate__animated  animate__fadeInRight"
-  alt=" "
-   style="animation-duration:5s"
-/>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="images/gallery/img5.jpg"
+            class="w-100 shadow-1-strong rounded mb-4  animate__animated  animate__fadeInRight" alt=" "
+            style="animation-duration:5s" />
 
-<img
-     src="images/gallery/img4.jpg"
-  class="w-100 shadow-1-strong rounded mb-4 animate__animated  animate__fadeInRight"
-  alt=""
-    style="animation-duration:5s"
-/>
-</div>
-</div>
-<!-- Gallery -->
-    </div>
+          <img src="images/gallery/img4.jpg"
+            class="w-100 shadow-1-strong rounded mb-4 animate__animated  animate__fadeInRight" alt=""
+            style="animation-duration:5s" />
+        </div>
+      </div>
+      <!-- Gallery -->
+  </div>
+
 </section>
+</div>
+<div id="container3" class="container">VIDEOS</div>
+<script>
+  // Get references to the buttons and containers
+  const button1 = document.getElementById('button1');
+  const button2 = document.getElementById('button2');
+  const button3 = document.getElementById('button3');
+
+  const container2 = document.getElementById('container2');
+  const container3 = document.getElementById('container3');
+
+  // Add click event listeners to the buttons
+  button1.addEventListener('click', () => {
+    container2.style.display = 'block';
+    container3.style.display = 'block';
+
+  });
+  button2.addEventListener('click', () => {
+    container2.style.display = 'block';
+    container3.style.display = 'none';
+  });
+  button3.addEventListener('click', () => {
+    container3.style.display = 'block';
+    container2.style.display = 'none';
+
+  });
+
+
+</script>
+</section>
+
 <!-- Gallery Section Exit -->
