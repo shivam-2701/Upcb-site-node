@@ -5,9 +5,10 @@ const app = express();
 
 
 const cookieParser = require("cookie-parser");
-const i18n = require("./config/i18n");
+//const i18n = require("./config/i18n");  
 
-app.use(bodyParser.urlencoded({extended:true}));
+//
+ app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(expressLayouts);
 app.set("layout extractStyles",true);
