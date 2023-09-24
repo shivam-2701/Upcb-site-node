@@ -4,6 +4,7 @@ const expressLayouts = require("express-ejs-layouts");
 const app = express();
 const cookieParser = require("cookie-parser");
 const i18n = require("./config/i18n");
+const router = require("./routes");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -17,124 +18,123 @@ app.use(i18n);
 
 app.use(express.static("./assets"));
 //home
-app.get("/", (req, res) => {
-  console.log(req.cookies);
-  return res.render("home");
-});
+
 app.get("/set-hindi", (req, res) => {
   res.cookie("lang", "hi", { maxAge: 900000, httpOnly: true });
   return res.redirect("/");
 });
 
-//AboutUs
-app.get("/aboutUs", (req, res) => {
-  return res.render("aboutUs");
-});
+app.use("/", router);
 
-//Services
-app.get("/services", (req, res) => {
-  return res.render("services");
-});
+// //AboutUs
+// app.get("/aboutUs", (req, res) => {
+//   return res.render("aboutUs");
+// });
 
-//insurance
-app.get("/insurance", (req, res) => {
-  return res.render("insurance");
-});
+// //Services
+// app.get("/services", (req, res) => {
+//   return res.render("services");
+// });
 
-//fixedDeposit
-app.get("/fixedDeposit", (req, res) => {
-  return res.render("fixedDeposit");
-});
+// //insurance
+// app.get("/insurance", (req, res) => {
+//   return res.render("insurance");
+// });
 
-//digitalbanking
-app.get("/digitalbanking", (req, res) => {
-  return res.render("digitalbanking");
-});
+// //fixedDeposit
+// app.get("/fixedDeposit", (req, res) => {
+//   return res.render("fixedDeposit");
+// });
 
-//atms_branches
-app.get("/atms_branches", (req, res) => {
-  return res.render("atms_branches");
-});
+// //digitalbanking
+// app.get("/digitalbanking", (req, res) => {
+//   return res.render("digitalbanking");
+// });
 
-//Service Charges
-app.get("/serviceCharges", (req, res) => {
-  return res.render("serviceCharges");
-});
+// //atms_branches
+// app.get("/atms_branches", (req, res) => {
+//   return res.render("atms_branches");
+// });
 
-//Loans
-app.get("/loans", (req, res) => {
-  return res.render("loans");
-});
+// //Service Charges
+// app.get("/serviceCharges", (req, res) => {
+//   return res.render("serviceCharges");
+// });
 
-//Accounts
-app.get("/accounts", (req, res) => {
-  return res.render("accounts");
-});
+// //Loans
+// app.get("/loans", (req, res) => {
+//   return res.render("loans");
+// });
 
-//News
-app.get("/news", (req, res) => {
-  return res.render("news");
-});
+// //Accounts
+// app.get("/accounts", (req, res) => {
+//   return res.render("accounts");
+// });
 
-//Digital Brochure
-app.get("/digitalBrochure", (req, res) => {
-  return res.render("digitalBrochure");
-});
+// //News
+// app.get("/news", (req, res) => {
+//   return res.render("news");
+// });
 
-//MediaCoverage
-app.get("/mediaCoverage", (req, res) => {
-  return res.render("mediaCoverage");
-});
+// //Digital Brochure
+// app.get("/digitalBrochure", (req, res) => {
+//   return res.render("digitalBrochure");
+// });
 
-//Awards
-app.get("/awards", (req, res) => {
-  return res.render("awards");
-});
+// //MediaCoverage
+// app.get("/mediaCoverage", (req, res) => {
+//   return res.render("mediaCoverage");
+// });
 
-//Events And Gallery
-app.get("/eventsGallery", (req, res) => {
-  return res.render("eventsGallery");
-});
+// //Awards
+// app.get("/awards", (req, res) => {
+//   return res.render("awards");
+// });
 
-//About Us
-app.get("/aboutUs", (req, res) => {
-  return res.render("aboutUs");
-});
+// //Events And Gallery
+// app.get("/eventsGallery", (req, res) => {
+//   return res.render("eventsGallery");
+// });
 
-//Download Forms
-app.get("/downloadForms", (req, res) => {
-  return res.render("downloadForms");
-});
+// //About Us
+// app.get("/aboutUs", (req, res) => {
+//   return res.render("aboutUs");
+// });
 
-//Tender
-app.get("/tender", (req, res) => {
-  return res.render("tender");
-});
+// //Download Forms
+// app.get("/downloadForms", (req, res) => {
+//   return res.render("downloadForms");
+// });
 
-//KYC
-app.get("/kyc", (req, res) => {
-  return res.render("kyc");
-});
+// //Tender
+// app.get("/tender", (req, res) => {
+//   return res.render("tender");
+// });
 
-//Acsti
-app.get("/acsti", (req, res) => {
-  return res.render("acsti");
-});
+// //KYC
+// app.get("/kyc", (req, res) => {
+//   return res.render("kyc");
+// });
 
-//Recruitment
-app.get("/recruitment", (req, res) => {
-  return res.render("recruitment");
-});
+// //Acsti
+// app.get("/acsti", (req, res) => {
+//   return res.render("acsti");
+// });
 
-//OtherLinks
-app.get("/otherLinks", (req, res) => {
-  return res.render("otherLinks");
-});
+// //Recruitment
+// app.get("/recruitment", (req, res) => {
+//   return res.render("recruitment");
+// });
 
-//Important Notification
-app.get("/importantNotification", (req, res) => {
-  return res.render("importantNotification");
-});
+// //OtherLinks
+// app.get("/otherLinks", (req, res) => {
+//   return res.render("otherLinks");
+// });
+
+// //Important Notification
+// app.get("/importantNotification", (req, res) => {
+//   return res.render("importantNotification");
+// });
 
 //Listen Port
 app.listen(7080, () => {
