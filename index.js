@@ -4,7 +4,7 @@ const expressLayouts = require("express-ejs-layouts");
 const app = express();
 
 
-const cookieParser = require("cookie-parser");
+ const cookieParser = require("cookie-parser");
 const i18n = require("./config/i18n");  
 
 
