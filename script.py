@@ -56,8 +56,8 @@ def translateGoogle(file_path):
                 i.string.replace_with(
                     ts.translate_text(str(i.string).strip(), to_language="hi", translator="google"))
         outputPath = os.path.join(os.getcwd(), 'translated', file_name)
-        with open(outputPath, "w") as f_output:
-            f_output.write(soup.prettify("utf-8"))
+        with open(outputPath, "w",encoding="utf-8") as f_output:
+            f_output.write(soup.prettify(encoding=None,formatter="html5"))
     except Exception as error:
         print(error)
         print(file_path + " error occured ")   
@@ -73,7 +73,7 @@ file_list = list(
 
 wordDict = {}
 
-translateGoogle(path.join(getcwd(),"views","aboutUs.ejs"));
+translateGoogle(path.join(getcwd(),"views","partials","_header.ejs"));
 
 # for idx in range(0, len(file_list)):
 #     print(idx)
