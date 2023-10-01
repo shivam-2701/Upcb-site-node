@@ -1630,3 +1630,10 @@ border: 3px solid orange;
     padding: 3.125rem 0;
 }
 
+
+/* Our Services hover effect */
+container-fluid:hover {
+    color: red;
+    cursor: pointer;
+}  
+
