@@ -645,7 +645,7 @@ button {
 
 
 /*6  Our Services section */
-.Ourservices_wrapper{
+.Ourservices_wrapper:hover{
   background-color:rgb(255, 206, 183);
 }
 
@@ -1632,8 +1632,15 @@ border: 3px solid orange;
 
 
 /* Our Services hover effect */
-container-fluid:hover {
-    color: red;
-    cursor: pointer;
-}  
+.pb-0:hover {
+    background-color: rgb(255, 206, 183);
+}
 
+.h3 :hover{
+    font-weight: 100;
+}
+
+
+.mb-3, h3 :hover{
+    font-size: 30px;
+}
