@@ -738,7 +738,7 @@ button {
 /* 4 Interest section exit */
 
 /*6  Our Services section */
-.Ourservices_wrapper {
+.Ourservices_wrapper:hover {
   background-color: rgb(255, 206, 183);
 }
 
@@ -1795,6 +1795,7 @@ border: 3px solid orange;
   margin-bottom: 20px;
 }
 
+
 .box a img:hover {
   animation-name: bounce;
   animation-timing-function: ease;
@@ -1817,4 +1818,14 @@ border: 3px solid orange;
   color: white;
   font-size: 4rem;
   text-transform: capitalize;
+}
+
+/* Home page hover effect */
+
+.pb-0:hover {
+    background-color: rgb(255, 206, 183);
+}
+
+.mb-3, h3 :hover {
+    font-size: 25px;
 }
