@@ -1755,9 +1755,10 @@ border: 3px solid orange;
   transition: 0.3s;
 }
 
-.ourproduct .container .box:hover {
-  -webkit-background-color: rgb(255, 206, 183);
-  background-color: rgb(255, 206, 183);
+.ourproduct .container .box {
+  -webkit-background-color: rgb(255, 206, 183); 
+   background-color: rgb(255, 255, 255);
+   text-align: justify;
 }
 
 .carousel-indicators {
@@ -1828,4 +1829,11 @@ border: 3px solid orange;
 
 .mb-3, h3 :hover {
     font-size: 25px;
+}
+.Interest_wrapper:hover {
+    background-color: rgb(255, 206, 183);
+}
+
+.ourproduct:hover {
+  background-color: rgb(255, 206, 183);
 }
