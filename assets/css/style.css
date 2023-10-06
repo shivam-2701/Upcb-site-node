@@ -1142,7 +1142,7 @@ h6 {
 
 /* 11 footer */
 .footer_wrapper {
-  /* background-image: url('upcb.jpg');;
+  /*background-image: url('upcb.jpg');;
    background-repeat: no-repeat;
    background-size: 100% 100%;
    background-color: rgba(255, 255, 255, 0.3);
@@ -1297,34 +1297,24 @@ h6 {
 
 @media (max-width: 991px) {
   /* custom css */
-
   section {
     padding: 1.875rem 0;
   }
 
   /* 2 Navbar */
-  .header_wrapper nav{
-    position: static !important;
-  }
-  a.nav-link.dropdown-toggle::after{
-      margin-left: 100px;
-      
-  }
+
   .header-scrolled {
     height: auto;
   }
 
   .header_wrapper .menu-navbar-nav {
-    /* text-align: center; */
+    text-align: center;
     background-color: var(--bg-dark-blue);
     padding-bottom: 0.9375rem;
   }
 
   .header_wrapper .nav-item .nav-link {
     margin-top: 0.9375rem;
-  }
-  .header_wrapper .nav-item  {
-    line-height: 5px;
   }
 
   /* banner wrapper */
@@ -1397,12 +1387,7 @@ h6 {
     margin-top: 20px;
   }
 }
-@media ((min-width:378) and (max-width: 991px)) {
-  /*header*/
-  .header_wrapper .container-fluid ul .menu-navbar-nav{
-    margin-left: 100px;
-  }
-}
+
 @media (max-width: 767px) {
   .about_wrapper .ourapp {
     padding: 0;
@@ -1433,7 +1418,7 @@ h6 {
   .blog-content {
     margin: 0;
   }
- 
+
   /* footer */
   .footer_wrapper > div {
     padding: 0 1.875rem;
@@ -1770,9 +1755,10 @@ border: 3px solid orange;
   transition: 0.3s;
 }
 
-.ourproduct .container .box:hover {
-  -webkit-background-color: rgb(255, 206, 183);
-  background-color: rgb(255, 206, 183);
+.ourproduct .container .box {
+  -webkit-background-color: rgb(255, 206, 183); 
+   background-color: rgb(255, 255, 255);
+   text-align: justify;
 }
 
 .carousel-indicators {
@@ -1843,4 +1829,11 @@ border: 3px solid orange;
 
 .mb-3, h3 :hover {
     font-size: 25px;
+}
+.Interest_wrapper:hover {
+    background-color: rgb(255, 206, 183);
+}
+
+.ourproduct:hover {
+  background-color: rgb(255, 206, 183);
 }
