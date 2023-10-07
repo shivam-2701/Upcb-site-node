@@ -67,6 +67,8 @@ section {
 }
 
 /**top nav start**/
+/*header*/
+
 .breadmenu {
   color: #ffffff;
   font-family: var(--primary-font);
@@ -358,7 +360,7 @@ p {
   border-top: 2px solid var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
 }
-
+ 
 .header_wrapper .nav-item .nav-link.active,
 .header_wrapper .nav-item .nav-link:hover {
   color: var(--secondary-text);
@@ -379,6 +381,7 @@ p {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--secondary-text);
+  background-color:#ffceb7;
 }
 
 .header_wrapper .link-widget li a {
@@ -536,9 +539,7 @@ p {
   padding-bottom: 10px;
 }
 
-.Interest_wrapper {
-  background-color: #f9f9f9;
-}
+
 
 .Interest_wrapper .ourapp .Mpassbook .MpassbookLink,
 .MobileApp .MobileAppLink {
@@ -568,6 +569,9 @@ p {
 }
 ***/
 /* 5.1 Interest section */
+.Interest_wrapper:hover {
+  background-color: rgb(255, 206, 183);
+}
 .Interest_wrapper {
   background-color: #f9f9f9;
 }
@@ -1297,7 +1301,7 @@ h6 {
 
 @media (max-width: 991px) {
   /* custom css */
-
+  
   section {
     padding: 1.875rem 0;
   }
@@ -1306,16 +1310,19 @@ h6 {
   .header_wrapper nav{
     position: static !important;
   }
-  a.nav-link.dropdown-toggle::after{
+  .header_wrapper nav .container-fluid div#row3{
+    background-color:rgb(255, 206, 183) !important;
+  }
+  /* a.nav-link.dropdown-toggle::after{
       margin-left: 100px;
       
-  }
+  } */
   .header-scrolled {
     height: auto;
   }
 
   .header_wrapper .menu-navbar-nav {
-    /* text-align: center; */
+    text-align: center;
     background-color: var(--bg-dark-blue);
     padding-bottom: 0.9375rem;
   }
@@ -1402,13 +1409,14 @@ h6 {
   .header_wrapper .container-fluid ul .menu-navbar-nav{
     margin-left: 100px;
   }
+ 
 }
 @media (max-width: 767px) {
   .about_wrapper .ourapp {
     padding: 0;
     margin: 0;
   }
-
+   
   /* custom css */
   h1 {
     font-size: 1.875rem;
@@ -1761,6 +1769,9 @@ border: 3px solid orange;
 .ourproduct {
   width: 100%;
 }
+.ourproduct:hover {
+  background-color: rgb(255, 206, 183);
+}
 
 .box {
   text-align: center;
@@ -1768,11 +1779,12 @@ border: 3px solid orange;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   border-radius: 2px;
   transition: 0.3s;
+
 }
 
-.ourproduct .container .box:hover {
-  -webkit-background-color: rgb(255, 206, 183);
-  background-color: rgb(255, 206, 183);
+.ourproduct .container .box{
+  /* -webkit-background-color: rgb(255, 206, 183); */
+  background-color:hsl(0, 0%, 100%);
 }
 
 .carousel-indicators {
